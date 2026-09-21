@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Meli 🌼</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="petal-field"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-flower" viewBox="0 0 100 100" id="hero-flower-svg"></svg>
+  <p class="eyebrow">21 de septiembre · Día de las flores amarillas</p>
+  <h1 class="title">Para Meli</h1>
+  <p class="hero-sub">Hoy el amarillo se toma el mundo entero, pero yo solo quería que se tomara su día.</p>
+  <p class="scroll-hint">deslice para leer su carta ↓</p>
+</section>
+
+<!-- LETTER -->
+<section class="letter-section">
+  <div class="letter">
+    <svg class="corner-flower tl" viewBox="0 0 100 100"><use href="#flower-template"/></svg>
+    <svg class="corner-flower br" viewBox="0 0 100 100"><use href="#flower-template"/></svg>
+    <h2 class="letter-heading">Mi Meli,</h2>
+    <p>Dicen que hoy hay que regalar flores amarillas, así que aquí le tengo un campo entero, hecho solo para usted, porque las de verdad se marchitan y estas se van a quedar floreciendo cada vez que quiera volver a leerlas.</p>
+    <p>Elegí el amarillo porque me recuerda a usted: llega y de repente todo se ve con más luz, hasta los días grises se acomodan un poco cuando aparece.</p>
+    <p>No necesito una fecha en el calendario para quererla, pero ya que existe, la voy a aprovechar para decírselo bien dicho: usted es mi lugar favorito, mi persona favorita, y pienso seguir eligiéndola un día a la vez.</p>
+    <p class="sign">Con todo mi cariño,<br>suyo.</p>
+  </div>
+</section>
+
+<!-- FIELD -->
+<section class="field-section">
+  <div class="closing-text">
+    <h2>Feliz día, mi amor</h2>
+    <p>Toque una flor y mire lo que pasa.</p>
+  </div>
+  <button class="send-btn" id="sendBtn">Mándele una flor a Meli 🌼</button>
+  <div class="meadow" id="meadow"></div>
+  <p class="footer-note">hecho con cariño para usted, Meli</p>
+</section>
+
+<!-- reusable flower symbol -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="flower-template">
+      <g class="flower-petals"></g>
+      <circle class="flower-center" cx="50" cy="50" r="13" fill="var(--center)"/>
+    </g>
+  </defs>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
